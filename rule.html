@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html"/>
+    <meta charset="UTF-8">
+    <title>趨勢盃壘球賽</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link rel="shortcut icon" href="style/ball.ico"/>
+    <link rel="bookmark" href="style/ball.ico"/>
+    <style>
+        #timetacoid-kbaseu {
+            height: 300px !important;
+            width: 400px !important;
+            transform: scale(0.5);
+            transform-origin: left top;
+            margin-bottom: -150px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="index.html" style="font-family:Microsoft JhengHei; font-size:50px"><span style="color:red">卑鄙</span><span
+                        style="font-color: white">趨勢人壘球賽</span></a></h1>
+                <h2 style="font-family:Microsoft JhengHei;font-size:20px">2020/08/29(六) 景美福和壘球B場</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li><a href="index.html">Home</a></li>
+                <li class="selected"><a href="rule.html">規則</a></li>
+                <li><a href="group.html">分組</a></li>
+                <li><a href="result.html">成績</a></li>
+                <li><a href="traffic.html">交通</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+        <div class="sidebar">
+            <!-- insert your sidebar items here -->
+            <h3>Information</h3>
+            <h4>距離比賽剩下</h4>
+            <script>(function (d, s, id) {
+                var js, timetacojs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'style/embed.js';
+                timetacojs.parentNode.insertBefore(js, timetacojs);
+            }(document, 'script', 'timetaco-jssdk'));
+            </script>
+            <div style="width: 200px" class='timetaco-list' data-timetacoid='kbaseu'></div>
+            <p></p>
+            <h4>天氣預報</h4>
+            <h5>August 29th, 2020</h5>
+            <iframe width="200" height="350"
+                    src="https://embed.windy.com/embed2.html?lat=25.048&lon=121.532&detailLat=25.048&detailLon=121.532&width=200&height=400&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=default&radarRange=-1"
+                    frameborder="0"></iframe>
+            <h3>Unuseful Links</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCzjNxGvrqfxL9KGkObbzrmg">反正我很閒</a></li>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="https://www.stackoverflow.com/">StackOverflow</a></li>
+                <li><a href="https://www.facebook.com/kobeengineer/">Kobeengineer</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <!-- insert the page content here -->
+            <h2>基本規則</h2>
+            <p>3隊循環制<br/>早上7:00報到暖身<br/>第一場於8:30開始，每場50分鐘，最後5分鐘不開新局<br/>
+                有提前結束(5局16分) 三隊互咬時，先比得分再比失分</p>
+            <p>以下為比賽大略規則:</p>
+            <ol>
+                <li>打席均從1好1壞開始計算，兩好球後擊出界外球為出局。</li>
+                <li>跑壘者不得在打擊者擊中球之前離壘，違者將判出局。</li>
+                <li>打擊者與跑壘者都必須全程配戴頭盔，除暫停時間或跑壘時自然脫 落外，刻意將頭盔摘下會判出局。</li>
+                <li>高手打擊請使用木棒，生手請用鋁棒。</li>
+                <li>嚴禁甩棒，初犯給予該場兩隊口頭警告，再犯者都判出局。</li>
+                <li>守備允許10人上場，打擊至多安排12人，單純打擊的EP(Extra Player)球員於開賽後不得上場守備。</li>
+                <li>先發球員允許被換下來之後再上場一次。</li>
+                <li>如遇未載明事項，依裁判判決為主。</li>
+            </ol>
+
+            <h2>趣味規則</h2>
+            <p style="color: cornflowerblue; font-weight: 900; display: inline">[進攻方]</p>
+            <ol>
+                <li>每位回來得分的跑者都可以丟骰子，數字即為該跑者的分數</li>
+                <li>每場有一次機會，安打到裁判說的指定區域(左半/右半)可以跑N+1個壘包，壘上有跑者時無條件推進，保送的話效果遞延至下一棒。</li>
+                <li>防守方不可在進攻方使用規則2以後要求對方換打擊區</li>
+                <li>領先超過10分的隊伍不能丟骰子</li>
+            </ol>
+            <p style="color: cornflowerblue; font-weight: 900; display: inline">[防守方]</p>
+            <ol>
+                <li>每場比賽有兩次機會(一局只能用一次)，指定一名打者換打擊區打擊
+                    (右打<->左打)，同個打者每場只能被換一次，須在打者進入打擊區之前使用
+                </li>
+                <li>每場比賽有一次機會，指定一名壘上跑者須全程抱著障礙物跑壘。</li>
+            </ol>
+            <p style="color: cornflowerblue; font-weight: 900; display: inline">[女生]</p>
+            <ol>
+                <li>當女性球員擊出“內野滾地球”時，守備員第一時間必需採傳向2壘或3壘壘包之2次傳球，不得直接傳向1壘，且守備員
+                    “趨前防守時"不得超過投手
+                </li>
+                <li>0好0壞開始，界外不算三振</li>
+                <li>本次比賽不強制要求先發需有女生</li>
+            </ol>
+        </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+        Copyright &copy; TRENDSOFTBALLCLUB
+    </div>
+</div>
+</body>
+</html>

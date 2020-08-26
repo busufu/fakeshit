@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="description" content="website description"/>
+    <meta name="keywords" content="website keywords, website keywords"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html"/>
+    <meta charset="UTF-8">
+    <title>趨勢盃壘球賽</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <link rel="shortcut icon" href="style/ball.ico"/>
+    <link rel="bookmark" href="style/ball.ico"/>
+    <style>
+        #timetacoid-kbaseu {
+            height: 300px !important;
+            width: 400px !important;
+            transform: scale(0.5);
+            transform-origin: left top;
+            margin-bottom: -150px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="header">
+        <div id="logo">
+            <div id="logo_text">
+                <!-- class="logo_colour", allows you to change the colour of the text -->
+                <h1><a href="index.html" style="font-family:Microsoft JhengHei; font-size:50px"><span style="color:red">卑鄙</span><span
+                        style="font-color: white">趨勢人壘球賽</span></a></h1>
+                <h2 style="font-family:Microsoft JhengHei;font-size:20px">2020/08/29(六) 景美福和壘球B場</h2>
+            </div>
+        </div>
+        <div id="menubar">
+            <ul id="menu">
+                <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rule.html">規則</a></li>
+                <li><a href="group.html">分組</a></li>
+                <li><a href="result.html">成績</a></li>
+                <li class="selected"><a href="traffic.html">交通</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+        <div class="sidebar">
+            <!-- insert your sidebar items here -->
+            <h3>Information</h3>
+            <h4>距離比賽剩下</h4>
+            <script>(function (d, s, id) {
+                var js, timetacojs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'style/embed.js';
+                timetacojs.parentNode.insertBefore(js, timetacojs);
+            }(document, 'script', 'timetaco-jssdk'));
+            </script>
+            <div style="width: 200px" class='timetaco-list' data-timetacoid='kbaseu'></div>
+            <p></p>
+            <h4>天氣預報</h4>
+            <h5>August 29th, 2020</h5>
+            <iframe width="200" height="350"
+                    src="https://embed.windy.com/embed2.html?lat=25.048&lon=121.532&detailLat=25.048&detailLon=121.532&width=200&height=400&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=default&radarRange=-1"
+                    frameborder="0"></iframe>
+            <h3>Unuseful Links</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/channel/UCzjNxGvrqfxL9KGkObbzrmg">反正我很閒</a></li>
+                <li><a href="https://www.google.com">Google</a></li>
+                <li><a href="https://www.stackoverflow.com/">StackOverflow</a></li>
+                <li><a href="https://www.facebook.com/kobeengineer/">Kobeengineer</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <!-- insert the page content here -->
+            <h2>交通方式</h2>
+            <p>您可以在捷運萬隆站四號出口下車，由羅斯福路五段218巷(康是美)右轉走到底，再上樓梯進入河堤到達比賽地點</p>
+            <p>請注意，進入河堤後第一個場地為C場，我們的比賽地點在中間的B場，跑錯棚的話隔壁大叔會很熱情的挖角你去台電上班</p>
+            <p>鼓勵大家共乘或搭乘大眾運輸工具到球場，堤外皆可停車(收費)，但不保證有位子</p>
+            <img src="style/traffic2.png" width="600" height="400">
+            <br /><br />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.971861047925!2d121.5350546601352!3d25.002028196047863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9f78facfb4d%3A0xa96f5311cf200fa0!2z56aP5ZKM5aOY55CD5aC0!5e0!3m2!1szh-TW!2stw!4v1598415465782!5m2!1szh-TW!2stw"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+        </div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">
+        Copyright &copy; TRENDSOFTBALLCLUB
+    </div>
+</div>
+</body>
+</html>
